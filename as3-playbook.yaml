@@ -1,0 +1,46 @@
+# This is a test
+---
+- name: Deploy AS3 playbook
+  hosts: localhost
+  connection: local
+  gather_facts: no
+ 
+  vars:
+    uri_method: POST
+
+  vars_files:
+  - ../creds/autows_bigip_creds.yaml  
+
+  tasks:
+
+  - name: Deploy AS3 declaration
+    uri:
+      url: https://{{bigip_host}}/mgmt/shared/appsvcs/declare
+      user: "{{bigip_user}}"
+      password: "{{bigip_pass}}"
+      method: "{{ uri_method }}"
+      body: "{{ lookup('file','./as3-declaration.json') }}"
+      force_basic_auth: yes
+      status_code: 
+        - 200
+        - 204
+      body_format: json
+      validate_certs: no
+    register: as3_output
+
+  - name: Debug AS3 as3_output
+    debug:
+      msg: "My AS3 output {{as3_output | to_nice_json }}"
+
+  # - name: DEBUG ALL VARS
+  #   debug:
+  #     msg: "{{ vars }}"
+
+  - name: DEBUG OUT AS3 VIRTUAL IP
+    debug:
+      msg: "Here is the virtual IP: {{ as3_output.json.declaration.coddigger.App1.vs_App1.virtualAddresses | to_nice_json }}"
+
+
+...
+
+
