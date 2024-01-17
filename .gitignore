@@ -32,4 +32,4 @@ override.tf.json
 *.pem
 *.tfvars
 *cred*
-.DS_Store
+.DS_Store*
