@@ -23,6 +23,7 @@ https://clouddocs.f5.com/products/extensions/f5-appsvcs-extension/latest/usergui
 - Follow steps 4 thru 7 with Postman. Change tenant name to "Student_XX"
 - Add a 2nd application within the same declaration (hint: copy A1)  
 - read the configuration (GET)
+- discuss DELETE operations
 
 ## Ansible
 Text goes here  
