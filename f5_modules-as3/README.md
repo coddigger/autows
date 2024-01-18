@@ -1,13 +1,21 @@
-# F5 Automation Workshop 101
+# Using the F5 ansible declarative collection
 
-## Login
-BIG-IP URL: *\<provided by instructor\>*  
-Username: *\<provided by instructor\>*  
-Password: *\<provided by instructor\>*  
+## Official documentation
+https://galaxy.ansible.com/ui/repo/published/f5networks/f5_bigip/docs/
 
-Desktop URL:  *\<provided by instructor\>*  
-Username: *\<provided by instructor\>*  
-Password: *\<provided by instructor\>*  
+### Installing the collection
+
+```
+ansible-galaxy collection install f5networks.f5_bigip -p ./collections  
+```
+
+Alternatively, you can define the following line in the local .ansible.cfg  
+```
+collections_paths = ./collections.  
+```
+
+
+
 
 ## AS3 declaration with Postman
 **Sample AS3 declaration**  
