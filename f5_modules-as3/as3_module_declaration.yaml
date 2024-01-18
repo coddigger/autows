@@ -25,10 +25,10 @@
         vsport: 80
         memberport: 8080
         poolname: web_pool
-        members: [web_servers]
-#          - 10.39.2.2
-#          - 10.39.2.3
-#          - 10.39.2.4
+        members:
+          - 10.39.2.2
+          - 10.39.2.3
+          - 10.39.2.4
       - name: api
         vsip: 10.39.3.1
         vsport: 3000
