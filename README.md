@@ -18,6 +18,11 @@ https://clouddocs.f5.com/products/extensions/f5-appsvcs-extension/latest/usergui
 This defines the JSON schema. VSCode will assist you with the syntax when added to your declaration.  
 https://clouddocs.f5.com/products/extensions/f5-appsvcs-extension/latest/userguide/validate.html#validate
 
+## Postman workshop flow  
+- Go to Quick Start on CloudDocs: https://clouddocs.f5.com/products/extensions/f5-appsvcs-extension/latest/userguide/quick-start.html#quick-start  
+- Follow steps 4 thru 7 with Postman. Change tenant name to "Student_XX"
+- Add a 2nd application in the same declaration  
+
 ## Ansible
 Text goes here  
   
