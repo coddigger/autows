@@ -14,7 +14,7 @@ Thumbs.db
 # .tfstate files
 *.tfstate
 *.tfstate.*
-
+cd 
 # Crash log files
 crash.log
 
