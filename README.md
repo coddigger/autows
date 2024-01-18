@@ -21,7 +21,7 @@ https://clouddocs.f5.com/products/extensions/f5-appsvcs-extension/latest/usergui
 ## Postman workshop flow  
 - Go to Quick Start on CloudDocs: https://clouddocs.f5.com/products/extensions/f5-appsvcs-extension/latest/userguide/quick-start.html#quick-start  
 - Follow steps 4 thru 7 with Postman. Change tenant name to "Student_XX"
-- Add a 2nd application in the same declaration  
+- Add a 2nd application within the same declaration (hint: copy A1)  
 
 ## Ansible
 Text goes here  
