@@ -31,7 +31,10 @@ https://clouddocs.f5.com/products/extensions/f5-appsvcs-extension/latest/usergui
 ansible-vault encrypt_string "<username"> --name "bigip-user"
 ansible-vault encrypt_string "<password"> --name "bigip-pass"
 ```
-  
+Then run the playbook with  
+```
+ansible-playbook <playbook> --ask-vault-pass
+```
 ## AS3 Best Practice
 https://community.f5.com/t5/technical-articles/as3-best-practice/ta-p/287466
 
