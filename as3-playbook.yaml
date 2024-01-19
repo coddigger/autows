@@ -28,9 +28,9 @@
       validate_certs: no
     register: as3_output
 
-  - name: Debug AS3 as3_output
-    debug:
-      msg: "My AS3 output {{as3_output | to_nice_json }}"
+#  - name: Debug AS3 as3_output
+#    debug:
+#      msg: "My AS3 output {{as3_output | to_nice_json }}"
 
   # - name: DEBUG ALL VARS
   #   debug:
