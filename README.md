@@ -26,7 +26,11 @@ https://clouddocs.f5.com/products/extensions/f5-appsvcs-extension/latest/usergui
 - discuss DELETE operations
 
 ## Ansible
-Text goes here  
+### Encrypting passwords
+```
+ansible-vault encrypt_string "<username"> --name "bigip-user"
+ansible-vault encrypt_string "<password"> --name "bigip-pass"
+```
   
 ## AS3 Best Practice
 https://community.f5.com/t5/technical-articles/as3-best-practice/ta-p/287466
