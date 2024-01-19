@@ -36,9 +36,9 @@
   #   debug:
   #     msg: "{{ vars }}"
 
-  - name: DEBUG OUT AS3 VIRTUAL IP
-    debug:
-      msg: "Here is the virtual IP: {{ as3_output.json.declaration.coddigger.App1.vs_App1.virtualAddresses | to_nice_json }}"
+  # - name: DEBUG OUT AS3 VIRTUAL IP
+  #   debug:
+  #     msg: "Here is the virtual IP: {{ as3_output.json.declaration.coddigger.App1.vs_App1.virtualAddresses | to_nice_json }}"
 
 
 ...
