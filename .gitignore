@@ -11,6 +11,9 @@ Thumbs.db
 # Local .terraform directories
 **/.terraform/*
 
+# Local Ansible collections directories
+**/.collections/*
+
 # .tfstate files
 *.tfstate
 *.tfstate.*
