@@ -25,6 +25,13 @@ https://clouddocs.f5.com/products/extensions/f5-appsvcs-extension/latest/usergui
 - read the configuration (GET)
 - discuss DELETE operations
 
+## Setting up git
+- Create a repository in your own Github account. Call it "autows"
+- Create a "Projects" folder  
+- Open the folder in VScode (add folder to workspace)
+- Clone your newly created git repo into the Projects folder (")git clone \<url\>)
+
+
 ## Ansible
 ### Encrypting passwords
 ```

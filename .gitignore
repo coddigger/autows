@@ -13,6 +13,7 @@ Thumbs.db
 
 # Local Ansible collections directories
 **/.collections/*
+**/collections/*
 
 # .tfstate files
 *.tfstate

@@ -15,7 +15,7 @@
 
   - name: Deploy AS3 declaration
     uri:
-      url: https://{{bigip_host}}/mgmt/shared/appsvcs/declare
+      url: https://{{bigip_host}}/mgmt/shared/appsvcs/declare/
       user: "{{bigip_user}}"
       password: "{{bigip_pass}}"
       method: "{{ uri_method }}"
