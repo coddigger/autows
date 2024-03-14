@@ -1,0 +1,66 @@
+{
+    "$schema": "https://raw.githubusercontent.com/F5Networks/f5-appsvcs-extension/master/schema/latest/as3-schema.json",
+    "class": "AS3",
+    "action": "deploy",
+    "persist": true,
+    "declaration": {
+        "class": "ADC",
+        "schemaVersion": "3.0.0",
+        "id": "generated-for-testing",
+        "label": "Sample app",
+        "remark": "Simple HTTP Service with Round-Robin Load Balancing",
+        "Sample_99": {
+            "class": "Tenant",
+            "A1": {
+                "class": "Application",
+                "service": {
+                    "class": "Service_HTTP",
+                    "virtualAddresses": [
+                        "10.99.1.10"
+                    ],
+                    "pool": "web_pool"
+                },
+                "web_pool": {
+                    "class": "Pool",
+                    "monitors": [
+                        "http"
+                    ],
+                    "members": [
+                        {
+                            "servicePort": 80,
+                            "serverAddresses": [
+                                "192.168.99.11",
+                                "192.168.99.12"
+                            ]
+                        }
+                    ]
+                }
+            },
+            "A2": {
+                "class": "Application",
+                "service": {
+                    "class": "Service_HTTP",
+                    "virtualAddresses": [
+                        "10.99.2.10"
+                    ],
+                    "pool": "web_pool"
+                },
+                "web_pool": {
+                    "class": "Pool",
+                    "monitors": [
+                        "http"
+                    ],
+                    "members": [
+                        {
+                            "servicePort": 80,
+                            "serverAddresses": [
+                                "192.168.99.21",
+                                "192.168.99.22"
+                            ]
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

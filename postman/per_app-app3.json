@@ -1,0 +1,24 @@
+{
+    "A3": {
+        "class": "Application",
+        "service": {
+            "class": "Service_HTTP",
+            "virtualAddresses": [
+                "10.99.3.10"
+            ],
+            "pool": "pool"
+        },
+        "pool": {
+            "class": "Pool",
+            "members": [
+                {
+                    "servicePort": 80,
+                    "serverAddresses": [
+                        "192.168.99.30",
+                        "192.168.99.31"
+                    ]
+                }
+            ]
+        }
+    }
+}

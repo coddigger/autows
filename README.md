@@ -48,8 +48,8 @@ https://community.f5.com/t5/technical-articles/as3-best-practice/ta-p/287466
 ## Tidbits
 **Three ways to delete a configuration**  
 - method POST with an empty declaration (preferred)
-- method POST  with action "remove"  
-- method DELETE  
+- method POST  with action "remove" (removes all AS3 declarations from box)
+- method DELETE using the tenant name as part of the URL 
 
 **Per-app documentation**  
 https://clouddocs.f5.com/products/extensions/f5-appsvcs-extension/latest/userguide/per-app-declarations.html#perapp
@@ -64,6 +64,7 @@ https://{bigip-host}/mgmt/shared/appsvcs/settings
     }  
 }  
 ```
+Per-app will be GA in AS3 release 3.50.  
 
 **Per-app endpoint**  
 https://{bigip-host}/mgmt/shared/appsvcs/declare/\<tenant\>/applications/
