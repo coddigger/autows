@@ -46,6 +46,10 @@ ansible-playbook <playbook> --ask-vault-pass
 https://clouddocs.f5.com/products/orchestration/ansible/devel/f5_bigip/f5_bigip.html  
 https://galaxy.ansible.com/ui/repo/published/f5networks/f5_modules/docs/  
 
+## F5 Ansible Imperative Collection  
+https://galaxy.ansible.com/ui/repo/published/f5networks/f5_modules/docs/  
+https://clouddocs.f5.com/products/orchestration/ansible/devel/f5_modules/getting_started.html  
+
 ## AS3 Best Practice
 https://community.f5.com/t5/technical-articles/as3-best-practice/ta-p/287466
 
