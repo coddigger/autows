@@ -35,8 +35,11 @@ https://clouddocs.f5.com/products/extensions/f5-appsvcs-extension/latest/usergui
 ## Ansible
 ### Using the builtin Ansible URL module
 https://docs.ansible.com/ansible/latest/collections/ansible/builtin/uri_module.html 
+
+Look for the "Create a JIRA issue" example and modify.  
+
 ```
-- name: Create a JIRA issue
+- name: Deploy AS3 declaration
   ansible.builtin.uri:
     url: https://{{bigip_host}}/mgmt/shared/appsvcs/declare/
     user: your_username
