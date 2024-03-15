@@ -38,15 +38,15 @@
           - 10.39.3.2
           - 10.39.3.3
           - 10.39.3.4
-      - name: web2
-        vsip: 10.39.4.1
-        vsport: 80
-        memberport: 8080
-        poolname: web2_pool
-        members:
-          - 10.39.4.2
-          - 10.39.4.3
-          - 10.39.4.4
+      # - name: web2
+      #   vsip: 10.39.4.1
+      #   vsport: 80
+      #   memberport: 8080
+      #   poolname: web2_pool
+      #   members:
+      #     - 10.39.4.2
+      #     - 10.39.4.3
+      #     - 10.39.4.4
 
   tasks:   
 

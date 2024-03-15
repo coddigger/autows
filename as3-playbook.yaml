@@ -3,7 +3,7 @@
 - name: Deploy AS3 playbook
   hosts: lb
   connection: local
-  gather_facts: no
+  gather_facts: false
  
   vars:
     uri_method: POST
@@ -38,7 +38,7 @@
 
   - name: DEBUG OUT AS3 VIRTUAL IP
     debug:
-      msg: "Here is the virtual IP: {{ as3_output.json.declaration.coddigger.App1.vs_App1.virtualAddresses }}"
+      msg: "Here is the virtual IP: {{ as3_output.json.declaration.CustomerB.App1.vs_App1.virtualAddresses }}"
 
 
 ...

@@ -41,7 +41,11 @@ ansible-vault encrypt_string "<password"> --name "bigip-pass"
 Then run the playbook with  
 ```
 ansible-playbook <playbook> --ask-vault-pass
-```
+```   
+### F5 Ansible Declarative Collection  
+https://clouddocs.f5.com/products/orchestration/ansible/devel/f5_bigip/f5_bigip.html  
+https://galaxy.ansible.com/ui/repo/published/f5networks/f5_modules/docs/  
+
 ## AS3 Best Practice
 https://community.f5.com/t5/technical-articles/as3-best-practice/ta-p/287466
 

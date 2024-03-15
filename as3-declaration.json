@@ -9,7 +9,7 @@
         "id": "generated-for-testing",
         "label": "Sample app",
         "remark": "Simple HTTP Service with Round-Robin Load Balancing",
-        "coddigger": {
+        "CustomerB": {
             "class": "Tenant",
             "App1": {
                 "class": "Application",
