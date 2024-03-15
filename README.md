@@ -51,6 +51,8 @@ Look for the "Create a JIRA issue" example and modify.
       - 200
       - 204
     body_format: json
+    validate_certs: false
+
 ```  
 
 ### Encrypting passwords
