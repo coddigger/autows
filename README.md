@@ -38,13 +38,15 @@ https://docs.ansible.com/ansible/latest/collections/ansible/builtin/uri_module.h
 ```
 - name: Create a JIRA issue
   ansible.builtin.uri:
-    url: https://your.jira.example.com/rest/api/2/issue/
+    url: https://{{bigip_host}}/mgmt/shared/appsvcs/declare/
     user: your_username
     password: your_pass
     method: POST
-    body: "{{ lookup('ansible.builtin.file','issue.json') }}"
+    body: "{{ lookup('file','as3-declaration.json') }}"
     force_basic_auth: true
-    status_code: 201
+    status_code: 
+      - 200
+      - 204
     body_format: json
 ```  
 
