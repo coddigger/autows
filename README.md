@@ -68,6 +68,20 @@ ansible-playbook <playbook> --ask-vault-pass
 https://clouddocs.f5.com/products/orchestration/ansible/devel/f5_bigip/f5_bigip.html  
 https://galaxy.ansible.com/ui/repo/published/f5networks/f5_modules/docs/  
 
+````
+    - name: Create AS3
+      f5networks.f5_bigip.bigip_as3_deploy:
+        content: "{{ lookup('template', 'declarations/as3_templ.json') }}"
+      tags: [ deploy ]
+      when: state == "present"
+
+    - name: Delete AS3
+      f5networks.f5_bigip.bigip_as3_deploy:
+        state: "{{ state }}"
+        tenant: "{{ partition }}"
+      when: state == "absent"
+``` 
+
 ### F5 Ansible Imperative Collection  
 https://galaxy.ansible.com/ui/repo/published/f5networks/f5_modules/docs/  
 https://clouddocs.f5.com/products/orchestration/ansible/devel/f5_modules/getting_started.html  
