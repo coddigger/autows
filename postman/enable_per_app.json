@@ -1,6 +1,0 @@
-# POST https://{{bigip_host}}/mgmt/shared/appsvcs/settings
-{
-    "betaOptions": {
-        "perAppDeploymentAllowed": true
-    }
-}
