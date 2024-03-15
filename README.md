@@ -33,6 +33,21 @@ https://clouddocs.f5.com/products/extensions/f5-appsvcs-extension/latest/usergui
 
 
 ## Ansible
+### Using the builtin Ansible URL module
+https://docs.ansible.com/ansible/latest/collections/ansible/builtin/uri_module.html 
+````
+- name: Create a JIRA issue
+  ansible.builtin.uri:
+    url: https://your.jira.example.com/rest/api/2/issue/
+    user: your_username
+    password: your_pass
+    method: POST
+    body: "{{ lookup('ansible.builtin.file','issue.json') }}"
+    force_basic_auth: true
+    status_code: 201
+    body_format: json
+```  
+
 ### Encrypting passwords
 ```
 ansible-vault encrypt_string "<username"> --name "bigip-user"
