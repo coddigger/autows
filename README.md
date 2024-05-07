@@ -108,7 +108,6 @@ Per-app declaration is supported from AS3 version 3.50. In prior versions you mu
     }  
 }  
 ```
-Per-app will be GA in AS3 release 3.50.  
 
 **Per-app endpoint**  
 https://{bigip-host}/mgmt/shared/appsvcs/declare/\<tenant\>/applications/
