@@ -98,8 +98,8 @@ https://community.f5.com/t5/technical-articles/as3-best-practice/ta-p/287466
 **Per-app documentation**  
 https://clouddocs.f5.com/products/extensions/f5-appsvcs-extension/latest/userguide/per-app-declarations.html#perapp
 
-**Per-app activation**  
-https://{bigip-host}/mgmt/shared/appsvcs/settings  
+**Per-app declaration**  
+Per-app declaration is supported from AS3 version 3.50. In prior versions you must enable it manually via https://{bigip-host}/mgmt/shared/appsvcs/settings  
 ```
 # Change settings to Per App API  
   {  
